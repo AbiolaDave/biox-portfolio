@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #040C18;
+  color: #E2EBF6;
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #040C18; }
+::-webkit-scrollbar-thumb { background: #1A3A5C; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #F59E0B; }
+
+/* Selection */
+::selection { background: rgba(245, 158, 11, 0.25); color: #FBBF24; }
+
+/* Gradient text utility */
+.gradient-text {
+  background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #FCD34D 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.12), 0 0 80px rgba(245, 158, 11, 0.06);
+}
+
+/* Code block styles */
+.code-keyword { color: #C792EA; }
+.code-var     { color: #F59E0B; }
+.code-string  { color: #C3E88D; }
+.code-bracket { color: #89DDFF; }
+.code-key     { color: #82AAFF; }
+.code-bool    { color: #F78C6C; }
+.code-comment { color: #546E7A; font-style: italic; }
+.code-number  { color: #F78C6C; }
+
+/* Section reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animated underline */
+.animated-underline {
+  position: relative;
+}
+.animated-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #F59E0B;
+  transition: width 0.3s ease;
+}
+.animated-underline:hover::after {
+  width: 100%;
+}
+
+/* Nav active */
+.nav-link {
+  position: relative;
+  color: #8BA7C7;
+  transition: color 0.2s;
+}
+.nav-link:hover { color: #E2EBF6; }
+.nav-link.active { color: #F59E0B; }
+
+/* Skill pill hover */
+.skill-pill {
+  transition: all 0.2s ease;
+  border: 1px solid #1A3558;
+}
+.skill-pill:hover {
+  border-color: rgba(245, 158, 11, 0.5);
+  color: #FBBF24;
+  background: rgba(245, 158, 11, 0.08);
+}
+
+/* Section label */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #F59E0B;
+}
+
+/* Timeline */
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: linear-gradient(to bottom, #F59E0B, transparent);
+}
+
+/* Card */
+.project-card {
+  background: #081525;
+  border: 1px solid #122845;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+.project-card:hover {
+  border-color: rgba(245, 158, 11, 0.35);
+  transform: translateY(-4px);
+}
+
+/* Cursor blink */
+.cursor::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  color: #F59E0B;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Ambient glow bg */
+.ambient-glow {
+  position: fixed;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.07;
+  z-index: 0;
+}
