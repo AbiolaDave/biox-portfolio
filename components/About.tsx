@@ -3,8 +3,8 @@
 import { useEffect, useRef } from 'react'
 
 const stats = [
-  { value: '1+', label: 'Years experience' },
-  { value: '50+', label: 'Developers trained' },
+  { value: '3+', label: 'Years experience' },
+  { value: '100+', label: 'Students trained' },
   { value: '4', label: 'Live projects shipped' },
   { value: '2:1', label: 'CS degree (FUNAAB)' },
 ]
@@ -48,7 +48,7 @@ export default function About() {
                 I graduated with a Second Class Upper in Computer Science from FUNAAB in 2024, completing a mandatory SIWES industrial placement at SQI College of ICT where I built full-stack applications in a team environment.
               </p>
               <p>
-                Since graduation, I've been the lead full-stack instructor at SQI — designing curriculum, conducting code reviews, and mentoring 50+ developers through building production-grade applications. That experience sharpened my ability to communicate technical decisions clearly and work effectively in collaborative engineering teams.
+                Since graduation, I've been the lead full-stack instructor at SQI — designing curriculum, conducting code reviews, and mentoring 100+ students through building production-grade applications. That experience sharpened my ability to communicate technical decisions clearly and work effectively in collaborative engineering teams.
               </p>
               <p>
                 I'm now looking for a backend or full-stack engineering role where I can contribute clean, well-tested code and keep growing fast.
@@ -88,7 +88,7 @@ export default function About() {
             <div className="mt-4 bg-[#081525] border border-[#122845] rounded-xl p-6">
               <p className="text-xs font-mono text-gold-500 mb-3 tracking-widest uppercase">Currently sharpening</p>
               <div className="flex flex-wrap gap-2">
-                {['Jest / Testing', 'GitHub Actions', 'Redis', 'Swagger/OpenAPI', 'WebSockets'].map(s => (
+                {['Redis'].map(s => (
                   <span key={s} className="text-xs px-2.5 py-1 rounded bg-gold-500/8 border border-gold-500/20 text-gold-400 font-mono">
                     {s}
                   </span>

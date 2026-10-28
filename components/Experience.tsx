@@ -10,7 +10,7 @@ const experiences = [
     period: 'January 2025 – Present',
     type: 'Full-time',
     bullets: [
-      'Led curriculum design and full-stack training for 50+ students across frontend and backend tracks — HTML/CSS, JavaScript, React.js, Node.js, and MongoDB.',
+      'Led curriculum design and full-stack training for 100+ students across frontend and backend tracks — HTML/CSS, JavaScript, React.js, Node.js, and MongoDB.',
       'Architected project scaffolds and real-world application structures that students used as foundations for portfolio work, enforcing production-grade coding standards.',
       'Conducted structured code reviews, debugging sessions, and mentorship — improving backend logic quality and architectural thinking across student projects.',
       'Introduced and enforced Git/GitHub workflows, RESTful API design principles, and Postman-based API testing in collaborative team environments.',

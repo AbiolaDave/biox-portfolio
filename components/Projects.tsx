@@ -2,7 +2,55 @@
 
 import { useEffect, useRef } from 'react'
 
-const projects = [
+type Project = {
+  title: string
+  description: string
+  stack: string[]
+  links: {
+    live?: string
+    frontend?: string
+    backend?: string
+    repository?: string
+  }
+  gradient: string
+  tag: string
+  privateRepository?: boolean
+}
+
+const projects: Project[] = [
+  {
+    title: 'Trustora',
+    description: 'A service marketplace built for Nigeria, connecting customers with verified artisans for essential home and repair services. Features customer onboarding, artisan verification, service discovery, bookings, quotes, payments, reviews, and admin controls.',
+    stack: ['Next.js', 'TypeScript', 'MongoDB', 'Tailwind CSS', 'Authentication', 'RBAC'],
+    links: {
+      live: 'https://trustora-two.vercel.app/',
+    },
+    gradient: 'from-amber-600/20 via-orange-600/10 to-transparent',
+    tag: 'Featured',
+    privateRepository: true,
+  },
+  {
+    title: 'Jobify',
+    description: 'A full-stack job platform with job search, applications, secure sign-in, and employer tools for posting jobs and managing applicants.',
+    stack: ['Next.js', 'MongoDB', 'Authentication', 'Job Search', 'Applications'],
+    links: {
+      live: 'https://jobify-ten-kappa.vercel.app/',
+      repository: 'https://github.com/AbiolaDave/jobify',
+    },
+    gradient: 'from-cyan-600/20 via-blue-600/10 to-transparent',
+    tag: 'Live',
+  },
+  {
+    title: 'SQI Attendance App',
+    description: 'An attendance management app for SQI, with a dedicated instructor experience for managing attendance.',
+    stack: ['Attendance Management', 'Instructor Experience'],
+    links: {
+      live: 'https://sqi-attendance-app.vercel.app/instructor',
+      repository: 'https://github.com/AbiolaDave/sqi-attendance-app',
+    },
+    gradient: 'from-violet-600/20 via-purple-600/10 to-transparent',
+    tag: 'Live',
+  },
   {
     title: 'Learning Management System',
     description: 'A full-stack LMS with student enrollment, instructor content management, and role-based dashboards for three distinct user types. Designed to demonstrate real-world auth flows, protected routes, and scalable data architecture.',
@@ -126,6 +174,21 @@ export default function Projects() {
                     >
                       Backend <LinkIcon />
                     </a>
+                  )}
+                  {project.links.repository && (
+                    <a
+                      href={project.links.repository}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xs font-medium text-slate-400 hover:text-slate-200 transition-colors flex items-center gap-1"
+                    >
+                      Repository <LinkIcon />
+                    </a>
+                  )}
+                  {project.privateRepository && (
+                    <span className="text-xs font-medium text-slate-500">
+                      Private repository
+                    </span>
                   )}
                 </div>
               </div>

@@ -26,12 +26,12 @@ const skillGroups = [
   {
     category: 'DevOps & Tools',
     icon: '⌘',
-    skills: ['Git / GitHub', 'Docker', 'Postman', 'Agile / Scrum', 'CI/CD'],
+    skills: ['Git / GitHub', 'Docker', 'Postman', 'Agile / Scrum', 'CI/CD', 'Jest', 'Swagger / OpenAPI', 'GitHub Actions', 'WebSockets'],
   },
   {
     category: 'In Progress',
     icon: '→',
-    skills: ['Jest', 'Redis', 'Swagger / OpenAPI', 'GitHub Actions', 'WebSockets'],
+    skills: ['Redis'],
     learning: true,
   },
 ]

@@ -11,7 +11,7 @@ const codeLines = [
   { indent: 1, content: [{ t: 'key', v: 'backend' }, { t: 'default', v: ': ' }, { t: 'bracket', v: '[' }, { t: 'string', v: '"NestJS"' }, { t: 'default', v: ', ' }, { t: 'string', v: '"Node.js"' }, { t: 'default', v: ', ' }, { t: 'string', v: '"TypeScript"' }, { t: 'bracket', v: ']' }, { t: 'default', v: ',' }] },
   { indent: 1, content: [{ t: 'key', v: 'frontend' }, { t: 'default', v: ': ' }, { t: 'bracket', v: '[' }, { t: 'string', v: '"React.js"' }, { t: 'default', v: ', ' }, { t: 'string', v: '"Next.js"' }, { t: 'default', v: ', ' }, { t: 'string', v: '"Tailwind"' }, { t: 'bracket', v: ']' }, { t: 'default', v: ',' }] },
   { indent: 1, content: [{ t: 'key', v: 'databases' }, { t: 'default', v: ': ' }, { t: 'bracket', v: '[' }, { t: 'string', v: '"PostgreSQL"' }, { t: 'default', v: ', ' }, { t: 'string', v: '"MongoDB"' }, { t: 'bracket', v: ']' }, { t: 'default', v: ',' }] },
-  { indent: 1, content: [{ t: 'key', v: 'devsTrained' }, { t: 'default', v: ': ' }, { t: 'number', v: '50' }, { t: 'default', v: ',' }] },
+  { indent: 1, content: [{ t: 'key', v: 'studentsTrained' }, { t: 'default', v: ': ' }, { t: 'number', v: '100' }, { t: 'default', v: ',' }] },
   { indent: 1, content: [{ t: 'key', v: 'available' }, { t: 'default', v: ': ' }, { t: 'bool', v: 'true' }, { t: 'default', v: ',' }] },
   { indent: 0, content: [{ t: 'default', v: '}' }] },
 ]
